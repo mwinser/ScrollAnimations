@@ -3,10 +3,11 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #5a5a5a
 }
 header {
     height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +29,14 @@ section {
 .section-header {
     text-align: center;
     font-size: 2rem;
+    display: grid;
+    grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+    align-items: center;
+    gap: 40px;
+}
+.section-header::before, .section-header::after {
+    content: '';
+    border-top: 6px double;
 }
 .destinations-container {
     display: flex;
@@ -69,9 +78,10 @@ section {
     margin: .5rem 0;
 }
 section#sticky-scroll {
-    width: 100vw;
+    width: 100%;
     max-width: unset;
     display: flex;
+    margin: 6rem auto 8rem auto;
 }
 .sticky-panel {
     min-height: 100vh;
@@ -105,7 +115,7 @@ section#sticky-scroll {
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 300px;;
+    min-height: 300px;
 }
 .scroll-panel-image-1 {
     background-image: url("https://images.unsplash.com/photo-1607739360893-7bbe4034727a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
@@ -121,7 +131,7 @@ section#sticky-scroll {
 
 footer {
     height: 20vh;
-    min-width: 100vw;
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,5 +152,4 @@ footer {
     .scroll-panel {
         width: 100vw;
     }
-
 }
