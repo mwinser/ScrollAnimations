@@ -30,7 +30,7 @@ section {
     text-align: center;
     font-size: 2rem;
     display: grid;
-    grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 40px;
 }
@@ -143,6 +143,10 @@ footer {
 
 
 @media (max-width: 800px) {
+    header>h1 {
+        font-size: 3.5rem;
+    }
+    
     section#sticky-scroll {
         flex-direction: column;
     }
@@ -151,5 +155,9 @@ footer {
     }
     .scroll-panel {
         width: 100vw;
+    }
+    .scroll-panel-text-card {
+        padding: 0 2rem;
+        text-align: center;
     }
 }
