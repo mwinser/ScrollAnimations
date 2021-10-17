@@ -9,6 +9,7 @@ header {
     height: 100vh;
     min-width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
@@ -20,6 +21,24 @@ header>h1 {
     color: white;
     font-size: 4rem;
     font-family: 'Shadows Into Light', cursive;
+}
+header>button {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    border: unset;
+    box-shadow: rgb(0 0 0 / 18%) 5px 4px 5px 1px;
+    color: #174753;
+    background: white;
+    font-size: 1.25rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+header>button:hover {
+    transform: translateY(-5%);
+    transition: transform .3s ease;
 }
 section {
     min-height: 75vh;
