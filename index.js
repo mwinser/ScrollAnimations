@@ -29,7 +29,6 @@ window.addEventListener('scroll', (e)=> {
         button.classList.add("cta-stuck")
     }
 
-    //console.log(parallaxImage.getBoundingClientRect().bottom)
     if (parallaxImage.getBoundingClientRect().top - innerHeight < 0){
         var scrollRatio = (100 * (1 - (parallaxImage.getBoundingClientRect().bottom / (3*(innerHeight + imageHeight))))) - 35
         parallaxImage.style.backgroundPositionY = scrollRatio + "%"
