@@ -1,5 +1,10 @@
 const button = document.querySelector(".cta")
 const header = document.querySelector("header")
+const parallaxImage = document.querySelector(".parallax-image")
+const innerHeight = window.innerHeight
+const imageHeight = parallaxImage.getBoundingClientRect().height
+
+
 const slideContainer = document.querySelector(".slideshow-container")
 var leftSlide = document.querySelector(".left")
 var centerSlide = document.querySelector(".center")
@@ -22,6 +27,12 @@ window.addEventListener('scroll', (e)=> {
         button.classList.remove("cta-stuck")
     } else {
         button.classList.add("cta-stuck")
+    }
+
+    //console.log(parallaxImage.getBoundingClientRect().bottom)
+    if (parallaxImage.getBoundingClientRect().top - innerHeight < 0){
+        var scrollRatio = (100 * (1 - (parallaxImage.getBoundingClientRect().bottom / (3*(innerHeight + imageHeight))))) - 35
+        parallaxImage.style.backgroundPositionY = scrollRatio + "%"
     }
 })
 
