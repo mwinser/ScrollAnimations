@@ -98,7 +98,7 @@ section {
     padding: 1rem;
 }
 .destination-image {
-    
+    position: relative;
     background-size: cover;
     width: 300px;
     height: 400px;
@@ -112,6 +112,43 @@ section {
 }
 .destination-image-3 {
     background-image: url('https://images.unsplash.com/photo-1566159269137-ccf6e35a126e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=627&q=80');
+}
+.hover-button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 75, 75, .5);
+    opacity: 0;
+    transition: opacity ease .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-button-container:hover {
+    opacity: 1;
+}
+.info-btn {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: .5rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.info-btn {
+    border: 2px solid white;
+    border-radius: .5rem;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color ease .5s;
+}
+.info-btn:hover {
+    color: rgba(75, 75, 75, 1);
 }
 
 .destination-desc-title {
