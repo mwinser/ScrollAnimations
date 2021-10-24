@@ -22,8 +22,8 @@ var isSliding = false
 
 
 window.addEventListener('scroll', (e)=> {
-    
-    if(header.getBoundingClientRect().y == 0){
+    console.log(header.getBoundingClientRect().y)
+    if(header.getBoundingClientRect().y >= -50){
         button.classList.remove("cta-stuck")
     } else {
         button.classList.add("cta-stuck")
