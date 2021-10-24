@@ -61,7 +61,7 @@ header {
     background-image: url("https://images.unsplash.com/photo-1633876452407-998ae1dda84b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1933&q=80")
 }
 
-header>h1 {
+h1 {
     color: white;
     font-size: 8rem;
     font-family: 'Shadows Into Light', cursive;
@@ -256,8 +256,9 @@ footer {
 }
 
 
+
 @media (max-width: 800px) {
-    header>h1 {
+    h1 {
         font-size: 3.5rem;
     }
 
