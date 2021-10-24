@@ -63,7 +63,7 @@ header {
 
 header>h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 8rem;
     font-family: 'Shadows Into Light', cursive;
 }
 
@@ -267,10 +267,10 @@ footer {
         margin: 6rem auto 6rem auto;
     }
     .sticky-panel {
-        width: 100vw;
+        width: 100%;
     }
     .scroll-panel {
-        width: 100vw;
+        width: 100%;
     }
     .scroll-panel-text-card {
         padding: 0 2rem;
