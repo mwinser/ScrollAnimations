@@ -243,7 +243,7 @@ section#sticky-scroll {
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 70%;
+    height: 74%;
     overflow-x: hidden;
 }
 .slideshow-image {
@@ -336,9 +336,6 @@ footer {
     .slideshow-image {
         height:80vw;
         width: 70vw;
-    }
-    .slideshow-image>h2 {
-        font-size: 1.1em;
     }
     .left-start {
         transform: translate(calc(-100vw - 50%), -50%);
