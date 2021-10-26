@@ -238,12 +238,12 @@ section#sticky-scroll {
     margin: 3rem 0;
     max-width: unset;
     width: 100%;
-    height: 60vh;
+    height: 67vh;
 }
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 80%;
+    height: 70%;
     overflow-x: hidden;
 }
 .slideshow-image {
@@ -327,10 +327,32 @@ footer {
         padding: 0 2rem;
         text-align: center;
     }
+    #slideshow {
+        height: 65vh;
+    }
+    .slideshow-container {
+        height: 75%;
+    }
     .slideshow-image {
-        height:42vw;
+        height:80vw;
+        width: 70vw;
     }
     .slideshow-image>h2 {
         font-size: 1.1em;
+    }
+    .left-start {
+        transform: translate(calc(-100vw - 50%), -50%);
+    }
+    .left {
+        transform: translate(calc(-25vw - 50%), -50%);
+    }
+    .center {
+        transform: translate(calc(50vw - 50%), -50%);
+    }
+    .right {
+        transform: translate(calc(125vw - 50%), -50%);
+    }
+    .right-start {
+        transform: translate(calc(200vw - 50%), -50%);
     }
 }
