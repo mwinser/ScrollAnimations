@@ -3,6 +3,7 @@ const header = document.querySelector("header")
 const parallaxImage = document.querySelector(".parallax-image")
 const innerHeight = window.innerHeight
 const imageHeight = parallaxImage.getBoundingClientRect().height
+const sectionHeaders = [...document.querySelectorAll(".section-header")]
 
 
 const slideContainer = document.querySelector(".slideshow-container")
@@ -22,16 +23,26 @@ var isSliding = false
 
 
 window.addEventListener('scroll', (e)=> {
+    //move cta button
     if(header.getBoundingClientRect().y >= -50){
         button.classList.remove("cta-stuck")
     } else {
         button.classList.add("cta-stuck")
     }
-
+    //parallax image
     if (parallaxImage.getBoundingClientRect().top - innerHeight < 0){
         var scrollRatio = (100 * (1 - (parallaxImage.getBoundingClientRect().bottom / (3*(innerHeight + imageHeight))))) - 35
         parallaxImage.style.backgroundPositionY = scrollRatio + "%"
     }
+    //section-headers animation
+    sectionHeaders.map(header => {
+        if (header.getBoundingClientRect().top - innerHeight < -200) {
+            document.documentElement.style.setProperty("--decorationWidth", "90%")
+        }
+        if (header.getBoundingClientRect().top < -50) {
+            document.documentElement.style.setProperty("--decorationWidth", "0%")
+        }
+    })
 })
 
 
