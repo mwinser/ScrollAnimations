@@ -238,12 +238,12 @@ section#sticky-scroll {
     margin: 3rem 0;
     max-width: unset;
     width: 100%;
-    height: 67vh;
+    height: 69vh;
 }
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 74%;
+    height: 75%;
     overflow-x: hidden;
 }
 .slideshow-image {
@@ -327,11 +327,14 @@ footer {
         padding: 0 2rem;
         text-align: center;
     }
+    .parallax-image {
+        background-size: 250%;
+    }
     #slideshow {
-        height: 65vh;
+        height: 72vh;
     }
     .slideshow-container {
-        height: 75%;
+        height: 65%;
     }
     .slideshow-image {
         height:80vw;
